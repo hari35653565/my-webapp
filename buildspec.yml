@@ -14,6 +14,9 @@ phases:
   
     build:
     commands:
+      - echo "we are in the build block"
+      - echo "we will run some tests"
+      - grep -Fq "Congratulations" index.html
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
