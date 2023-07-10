@@ -2,8 +2,7 @@
 This is a webapp with different buildspec.yml files to deploy.
 Just experimenting on it.
 
-			version: 0.2
-
+version: 0.2
 phases: 
     install:
         runtime-versions:
